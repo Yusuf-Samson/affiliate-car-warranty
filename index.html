@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    const reasons = document.querySelectorAll('.reason');
+    let index = 0;
+
+    setInterval(() => {
+        reasons[index].classList.remove('active');
+        index = (index + 1) % reasons.length;
+        reasons[index].classList.add('active');
+    }, 3500);
+</script>
+
+
+
+<body class="wrap">
+
+
+    <header>
+        <div class="logo">Chaiz</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main class="hero">
+    <div class="hero-text">
+        <h1>Protect Your Car from Unexpected Repair Bills</h1>
+        <p>Affordable extended vehicle protection options available for US drivers</p>
+        <p class="muted">You'll be redirected to a trusted provider</p>
+        <a href="https://chaiz.sjv.io/GKaN2E" class="primary-cta" target="_blank">See Coverage Options</a>
+        <p class="info">You’ll be redirected to a trusted provider to complete your purchase.</p>
+        <h1>Why Our Drivers Choose Extended Vehicle Programs</h1>
+
+        <div class="reasons-carousel">
+            <ul class="reasons-list">
+                <li class="reason active">Covers expensive engine and transmission repairs</li>
+                <li class="reason">Nationwide repair network</li>
+                <li class="reason">Predictable monthly costs</li>
+                <li class="reason">24/7 roadside assistance</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="hero-image">
+        <img src="assets/car img.jpeg" alt="Car owner">
+    </div>
+</main>
+
+
+    <section class="warning">
+        <p>Disclaimer: This website is an independent marketing partner and does not provide vehicle service contracts directly, 
+            Coverage details, Pricing and terms are prohibited by third party providers on the next page.</p>
+            <p class="copyright"></p>
+    </section>
+
+</body>
+</html>
