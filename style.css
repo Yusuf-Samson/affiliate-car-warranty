@@ -167,98 +167,55 @@ img {
 
 }
 
-
-@media (max-width: 480px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-    .primary-cta {
-        width: fit-content;
-        text-align: center;
-    }
-
-    .wrap {
-        margin: 1em;
-    }
-
-    header {
-        display: flex;
-        justify-content: center;
-        gap: 50%;
-    }
-
-    .warning {
-        font-size: smaller;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .copyright {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-
-
-@media (max-width: 600px) {
-    .primary-cta {
-        width: 50%;
-        text-align: center;
-    }
-
-    .wrap {
-        margin: 1em;
-    }
-}
-
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
+        gap: 2em;
+        padding: 3em 1em;
     }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .site-header {
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    .main-nav ul {
+        justify-content: center;
+        gap: 1.5em;
+        flex-wrap: wrap;
+    }
+
+    .hero-image img {
+        width: 300px;
+    }
+
     .primary-cta {
-        width: 80%;
-        text-align: center;
+        width: 90%;
+        font-size: 1.05rem;
+        padding: 1em;
     }
 
-    .wrap {
-        margin: 1em;
+    .reasons-list {
+        width: 90%;
     }
 
-    header {
-        display: flex;
-        justify-content: center;
-        gap: 20%;
+    .reason {
+        font-size: 1rem;
+        padding: 1.2em;
     }
 
-    .warning {
-        font-size: smaller;
-        margin-left: 20px;
-        margin-right: 50px;
+    h1 {
+        font-size: 1.6rem;
+        line-height: 1.2;
     }
 
-    .copyright {
-        display: flex;
-        justify-content: center;
-    }
-
-}
-
-@media (max-width: 960px) {
-    .primary-cta {
-        width: 80%;
-        text-align: center;
-    }
-
-    header {
-        display: flex;
-        justify-content: center;
-        gap: 20%;
-    }
-
-    .wrap {
-        margin: 1em;
+    p {
+        font-size: 1rem;
     }
 }
